@@ -1,21 +1,14 @@
 import React from "react"
 import { Layout, Menu, Breadcrumb } from "antd"
+import { Footer, Header } from "../../components";
 
-const { Header, Content, Footer } = Layout
+const { Content } = Layout
 
 export const Home = () => {
   return (
     <div>
       <Layout className="layout">
-        <Header>
-          <div className="logo" />
-          <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["2"]}>
-            {new Array(15).fill(null).map((_, index) => {
-              const key = index + 1
-              return <Menu.Item key={key}>{`nav ${key}`}</Menu.Item>
-            })}
-          </Menu>
-        </Header>
+        <Header/>
         <Content style={{ padding: "0 50px" }}>
           <Breadcrumb style={{ margin: "16px 0" }}>
             <Breadcrumb.Item>Home</Breadcrumb.Item>
@@ -24,9 +17,7 @@ export const Home = () => {
           </Breadcrumb>
           <div className="site-layout-content">Content</div>
         </Content>
-        <Footer style={{ textAlign: "center" }}>
-          Ant Design ©2018 Created by Ant UED
-        </Footer>
+        <Footer/>
       </Layout>
       ,
     </div>
