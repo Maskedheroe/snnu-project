@@ -1,0 +1,8 @@
+
+.user {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #545c63;
+}

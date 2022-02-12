@@ -1,0 +1,13 @@
+.header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  background-color: rgb(255, 255, 255) !important;
+  z-index: 1;
+}
+
+.list {
+  flex: 1;
+  /* font-size: #545c63; */
+  font-size: 300px;
+}
